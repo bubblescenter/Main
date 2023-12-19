@@ -1,0 +1,1428 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: 'Poppins', sans-serif; */
+  font-family: 'Fredoka One', cursive;
+  font-weight: 500;
+  /* color: #fff; */
+}
+
+html {
+  /* background: linear-gradient(150deg, #f7d683, 8%, #FF3FA4, 50%, #D67BFF, #6fc6ee); */
+  background-repeat: no-repeat;
+}
+
+
+body {
+  background: linear-gradient(150deg, #f7d683, 8%, #FF3FA4, 50%, #D67BFF, #6fc6ee) !important;
+}
+
+/* ////////////////////////////////////////// */
+/* navbar  */
+/* ////////////////////////////////////////// */
+
+.navbar {
+  font-size: 1.3rem;
+  position: absolute;
+  right: 2%;
+  top: 1%;
+  z-index: 10;
+  /* Adjust as needed */
+}
+
+@media (max-width: 800px) {
+  .navbar-hide {
+    display: none;
+  }
+
+}
+
+
+@media (max-width: 1600px) {
+  .navbar {
+    font-size: 1.1rem;
+  }
+
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  /* Align items to the right */
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar a:hover {
+  color: #f7d683;
+}
+
+/* Optional: Adjust styles for better responsiveness */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar a {
+    text-align: center;
+  }
+}
+
+.finger-settings {
+  transform: rotate(-145deg);
+}
+
+.emote-container {
+
+  padding: 0 0.5vh;
+  padding-top: 2vh;
+  height: 9vh;
+  color: #f7d683;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  animation: touch-animation 5s forwards;
+}
+
+@media(max-width:1420px) {
+  .emote-container {
+    position: relative;
+    top: 60px;
+  }
+}
+
+@media(max-width:500px) {
+  .emote-container {
+    font-size: 2rem;
+  }
+}
+
+@media(max-width:281px) {
+  .emote-container {
+    font-size: 1.3rem;
+  }
+}
+
+@media(max-width:200px) {
+  .emote-container {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+@keyframes touch-animation {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.8;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+    /* display: none; */
+  }
+}
+
+/* ////////////////////////////////////////// */
+/* top interface section  */
+/* ////////////////////////////////////////// */
+
+.top-interface-section {
+  /* background: linear-gradient(150deg, #f7d683, 8%, #FF3FA4, 50%, #D67BFF, #6fc6ee); */
+}
+
+.wrapper {
+  transform: translateZ(0);
+  overflow: hidden;
+  height: 89vh;
+  width: 100%;
+}
+
+.intro-main-div {
+  padding-left: 5%;
+  /* height: 100vh !important;
+  width: 100% !important; */
+}
+
+.logo-image-pc-div {
+  height: 50vh !important;
+  width: 50vh !important;
+  /* top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* position: absolute; */
+}
+
+.logo-image-pc {
+  height: 100%;
+  width: 100%;
+  /* top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  /* position: absolute; */
+}
+
+.logo-image-text-pc {
+  color: #fff;
+  height: 40vh !important;
+  width: 100vh !important;
+  font-size: 1.5rem;
+  font-weight: 100 !important;
+  position: relative;
+  top: -30%;
+  line-height: 1.2;
+}
+
+.intro-main-button {
+  margin-top: 2%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6fc6ee;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+
+/* Hover styles for the button */
+.intro-main-button:hover {
+  background-color: #6fc7ef;
+  color: #f6ec6a;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  /* border: 2px solid #2980b9; */
+}
+
+.intro-main-button::after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  content: "About Us";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #6fc7ef;
+  background-color: #f6ec6a;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.intro-main-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.logo-image {
+  display: none;
+  height: 80%;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+@media(max-width: 900px) {
+  .logo-image {
+    height: 60%;
+
+  }
+}
+
+@media(max-width: 700px) {
+  .logo-image {
+    height: 40%;
+
+  }
+}
+
+@media(max-width: 500px) {
+  .logo-image {
+    height: 30%;
+
+  }
+}
+
+
+/* Media query to show .logo-image and hide .intro-main-div */
+@media (max-width: 1500px) {
+  .intro-main-div {
+    display: none !important;
+  }
+
+  .logo-image {
+    display: block !important;
+  }
+}
+
+.wrapper div {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  background-size: cover;
+}
+
+
+div .dot {
+  height: 50px;
+  width: 50px;
+  border-radius: 70px;
+  background: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+
+.wrapper div:nth-child(1) {
+  /* position: absolute; */
+  /* width: 100%;
+  height: 40vh; */
+}
+
+.wrapper div:nth-child(2) {
+  /* height: 250px;
+  width: 250px;
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+  position: absolute; */
+}
+
+.wrapper div:nth-child(3) {
+  height: 70px;
+  width: 70px;
+  top: 60%;
+  left: 90%;
+  animation: animate 3s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(4) {
+  height: 150px;
+  width: 150px;
+  top: 66%;
+  left: 30%;
+  animation: animate 7s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(5) {
+  height: 200px;
+  width: 200px;
+  top: 82%;
+  left: 10%;
+  animation: animate 9s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(6) {
+  height: 110px;
+  width: 110px;
+  top: 30%;
+  left: 60%;
+  animation: animate 5s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(7) {
+  height: 100px;
+  width: 100px;
+  top: 82%;
+  left: 50%;
+  animation: animate 8s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(8) {
+  height: 100px;
+  width: 100px;
+  top: 75%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+  position: absolute;
+
+}
+
+.wrapper div:nth-child(9) {
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  animation: animate 6s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(10) {
+  height: 150px;
+  width: 150px;
+  top: 45%;
+  left: 20%;
+  animation: animate 10s linear infinite;
+  position: absolute;
+
+}
+
+.wrapper div:nth-child(11) {
+  height: 50px;
+  width: 50px;
+  top: 15%;
+  left: 90%;
+  animation: animate 9s linear infinite;
+  position: absolute;
+  /* display: none; */
+}
+
+.wrapper div:nth-child(12) {
+  height: 80px;
+  width: 80px;
+  top: 20%;
+  left: 70%;
+  animation: animate 7s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(13) {
+  height: 120px;
+  width: 120px;
+  top: 20%;
+  left: 20%;
+  animation: animate 8s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(14) {
+  height: 80px;
+  width: 80px;
+  top: 60%;
+  left: 5%;
+  animation: animate 6s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(15) {
+  height: 120px;
+  width: 120px;
+  top: 90%;
+  left: 80%;
+  animation: animate 9s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(16) {
+  height: 110px;
+  width: 110px;
+  top: 33%;
+  left: 77%;
+  animation: animate 9s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(17) {
+  height: 300px;
+  width: 300px;
+  top: 60%;
+  left: 80%;
+  animation: animate 10s linear infinite;
+  position: absolute;
+}
+
+.wrapper div:nth-child(18) {
+  height: 200px;
+  width: 200px;
+  top: 65%;
+  left: 67%;
+  animation: animate 12s linear infinite;
+  position: absolute;
+}
+
+@media(max-width:700px) {
+  .wrapper div:nth-child(16) {
+    display: none;
+  }
+
+  .wrapper div:nth-child(17) {
+    display: none;
+  }
+
+  .wrapper div:nth-child(18) {
+    display: none;
+  }
+}
+
+
+
+
+@keyframes animate {
+  0% {
+    background-image: none;
+    opacity: 0.7;
+    transform: scale(0) translateY(0) rotate(70deg);
+    box-shadow: 0 0 25px #fff inset;
+  }
+
+  90% {
+    opacity: 0.35;
+    background-image: none;
+    box-shadow: 0 0 25px #fff inset;
+  }
+
+  95% {
+    opacity: 0.1;
+    background-image: url('images/pngwing.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: none;
+  }
+
+  100% {
+    opacity: 0.01;
+    transform: scale(1.3) translateY(-100px) rotate(360deg);
+  }
+
+}
+
+
+.wrapper .bubbles-div:hover {
+  animation: pop 0.3s forwards, reset-position 0s 0.3s forwards
+}
+
+@keyframes pop {
+  0% {
+    background-image: url('images/pngwing.png');
+    transform: scale(0.85);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+
+}
+
+@keyframes reset-position {
+  0% {
+    transform: scale(0.25);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(0);
+    animation: animate 9s linear infinite;
+  }
+}
+
+.footer-media-icons-div {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative !important;
+  /* bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); */
+  margin-bottom: 1%;
+}
+
+.footer-single-media {
+  color: #fff;
+  margin: 5px 20px;
+  font-size: 38px;
+  transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-single-media:hover {
+  color: #f7d683 !important;
+  transform: scale(1.2);
+  opacity: 0.8;
+}
+
+.footer-rights {
+  color: #fff;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+/* ////////////////////////////////////////// */
+/* about-us-section */
+/* ////////////////////////////////////////// */
+
+.about-us-section {
+  /* background: linear-gradient(29deg, #f7d683, 8%, #FF3FA4, 50%, #D67BFF, #6fc6ee); */
+}
+
+.about-us-bubbles-text {
+  font-size: 180%;
+  /* margin-bottom: 3%; */
+}
+
+.about-us-ec-text {
+  font-size: 140%;
+  margin-bottom: 1%;
+}
+
+.about-us-text-div {
+  line-height: 1rem;
+  color: #fff;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.2);
+  padding: 10% 10%;
+  margin: 1% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-size: 2rem;
+  /* text-align: center; */
+  line-height: 1.5;
+}
+
+.center-ar {
+  text-align: center !important;
+}
+
+@media(max-width:650px) {
+  .about-us-text-div {
+    text-align: center;
+  }
+}
+
+@media(max-width:1400px) {
+  .about-us-text-div {
+    padding: 0% 6%;
+    /* height: 100vh; */
+    /* margin: 0% 0%; */
+    font-size: 1.4rem;
+    /* line-height: 1.3; */
+  }
+}
+
+@media(max-width:1000px) {
+  .about-us-text-div {
+    padding: 0% 6%;
+    /* height: 100vh; */
+    margin: 0% 0%;
+    font-size: 1.3rem;
+    /* line-height: 1.3; */
+  }
+}
+
+@media(max-width:650px) {
+  .about-us-text-div {
+    padding: 0% 10%;
+    /* height: 100vh; */
+    margin: 0% 0%;
+    font-size: 1.0rem;
+    /* line-height: 1.3; */
+  }
+}
+
+@media(max-width:320px) {
+  .about-us-text-div {
+    padding: 0% 6%;
+    /* height: 100vh; */
+    margin: 0% 0%;
+    font-size: 0.9rem;
+    /* line-height: 1.3; */
+  }
+}
+
+
+.our-services-phone-buttons-p {
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+.our-services-phone-buttons-buttom-p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-us-button {
+  margin-top: 2%;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6fc6ee;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+/* Hover styles for the button */
+.about-us-button:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+  /* border: 2px solid #2980b9; */
+}
+
+.about-us-button::after {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  content: "Explore More";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #6fc6ee;
+  background-color: #f7d683;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.about-us-button:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* ////////////////////////////////////////// */
+/* our services section */
+/* ////////////////////////////////////////// */
+
+.vices-main-div {}
+
+
+.our-services-phone-section {
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.2);
+  display: none;
+  background-image: url("images/soft-play-area-phone.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.our-services-div-settings {
+  background-color: rgba(60, 60, 60, 0.5);
+}
+
+
+.daughter-div-container {
+  padding: 0% 10%;
+}
+
+
+.our-services-buttons-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-services-butour-sertons-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -5px;
+}
+
+.our-services-buttons {
+  text-align: center;
+  line-height: 1;
+  border: 4px solid #fff;
+  color: #fff;
+  padding: 10px 15px;
+  /* Adjust the padding as needed */
+  background-color: transparent;
+  font-size: .9rem;
+  transition: color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+  text-decoration: none;
+  box-sizing: border-box;
+  min-width: 150px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin: 10px 5px;
+}
+
+@media (max-width: 768px) {
+  .our-services-buttons {
+    margin: 10px 2px;
+  }
+}
+
+.our-services-buttons:last-child {
+  margin-right: 0;
+}
+
+
+.our-services-text {
+  font-size: 1.7rem;
+  line-height: 1.5;
+  padding: 3% 7% 0% 7%;
+
+}
+
+
+@media(max-width:670px) {
+  .our-services-text {
+    font-size: 1.4rem;
+    padding: 5% 11% 0 11%;
+  }
+}
+
+
+@media(max-width:470px) {
+  .our-services-text {
+    font-size: 1.25rem;
+    padding: 5% 11% 0 11%;
+  }
+}
+
+@media(max-width:340px) {
+  .our-services-text {
+    font-size: 1.1rem;
+    padding: 5% 11% 0 11%;
+  }
+}
+
+
+.our-services-text-height {
+  height: 35vh;
+}
+
+@media (max-width: 768px) {
+  .our-services-text-height {
+    height: 40vh;
+
+  }
+
+}
+
+
+
+@media(min-width: 1200px) and (max-width: 1350px) {
+  .our-services-buttons {
+    padding: 5px 1px;
+    font-size: 12.5px;
+  }
+}
+
+
+.our-services-buttons:hover {
+  color: lightskyblue;
+  transform: scale(1.1);
+}
+
+.our-services-buttons-js-border {
+  border: 4px solid lightskyblue;
+}
+
+
+.smooth-background-transition {
+  transition: background-image 0.1s ease-in-out;
+}
+
+/* .our-services-img-settings {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow: hidden;
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("images/safe.jpg");
+  position: relative;
+}
+ */
+
+.our-services-div-settings {
+  font-weight: bold;
+  font-size: 2rem;
+  padding: 10% 3%;
+  text-align: center;
+  align-items: center;
+  color: #fff;
+  height: 80vh;
+}
+
+@media(max-width:850px) {
+  .our-services-img-settings {
+    display: none;
+  }
+}
+
+
+@media(max-width:600px) {
+  .our-services-div-settings {
+    height: 70vh;
+  }
+}
+
+
+/* ////////////////////////////////////////// */
+
+.our-services-grandmother-div-padding {
+  padding: 8% 16%;
+}
+
+@media(max-width:1200px) {
+  .our-services-grandmother-div-padding {
+    padding: 8% 10%;
+  }
+}
+
+.our-services-mother-div {
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  overflow: hidden;
+}
+
+.our-services-images {
+  height: 55vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.our-services-box1 {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.our-services-box1-ar {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.our-services-box2 {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.our-services-box2-ar {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.our-services-box3 {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.our-services-box3-ar {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.our-services-box4 {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+.our-services-box4-ar {
+  padding: 0;
+  display: flex;
+  position: relative;
+}
+
+/* box 1 */
+.our-services-box1:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box1::after {
+  content: "Our vibrant soft play area is a haven for little ones, filled with colorful structures and interactive games, providing a safe and joyful space for kids to explore, play, and make new friends.";
+  color: #6fc6ee;
+  color: #000000;
+  background-color: #6fc6ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.our-services-box1:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* box-1 ar  */
+.our-services-box1-ar:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box1-ar::after {
+  content: "تعد منطقة اللعب النابضة بالحياة لدينا ملاذًا للأطفال الصغار، فهي مليئة بالهياكل الملونة والألعاب التفاعلية، مما يوفر مساحة آمنة ومبهجة للأطفال للاستكشاف واللعب وتكوين صداقات جديدة";
+  color: #6fc6ee;
+  color: #000000;
+  background-color: #6fc6ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+.our-services-box1-ar:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* box2  */
+.our-services-box2:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box2::after {
+  content: "Experience a secure soft play haven where safety and hygiene are paramount.Our trained staff ensures your children can explore, play, and socialize confidently in a protected environment.With rigorous hygiene standards, we provide a clean, sanitized spaces.";
+  color: #000000;
+  background-color: #FF3FA4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  /* Adjust the padding as needed */
+}
+
+.our-services-box2:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+/* box-2 ar  */
+.our-services-box2-ar:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box2-ar::after {
+  content: "نحن نولي اهتمامًا فائقًا للسلامة والنظافة. يعمل موظفونا على ضمان سلامة أطفالكم، حيث يمكنهم الاستكشاف واللعب والتواصل الاجتماعي بكل ثقة في بيئة محمية. بفضل معايير النظافة الصارمة التي نتبعها، نقدم مساحات نظيفة ومعقمة، حيث يمكن لأطفالكم الاستمتاع بتجربة ممتعة وصحية. نحن نحرص على توفير بيئة آمنة ونظيفة لضمان راحة الأطفال والآباء على حد سواء";
+  color: #000000;
+  background-color: #FF3FA4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  /* Adjust the padding as needed */
+}
+
+.our-services-box2-ar:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+/* box3  */
+.our-services-box3:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box3::after {
+  content: "Indulge your taste buds in our exquisite restaurant offering a diverse menu of culinary delights. Our 'Paresta' section combines the best of both worlds, providing a sophisticated dining experience for parents while ensuring a playful and enjoyable atmosphere for the kids.";
+  color: #000000;
+  background-color: #D67BFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  /* Adjust the padding as needed */
+}
+
+.our-services-box3:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* box3- ar  */
+.our-services-box3-ar:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box3-ar::after {
+  content: "استمتعوا بتذوق نكهات شهية في مطعمنا الذي يقدم قائمة متنوعة من الأطباق اللذيذة. قسم 'باريستا' لدينا يقدم تجربة فريدة، مع الحرص على إبقاء جو مليء باللعب والمتعة للأطفال";
+  color: #000000;
+  background-color: #D67BFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  /* Adjust the padding as needed */
+}
+
+.our-services-box3-ar:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+/* box4  */
+
+.our-services-box4:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box4::after {
+  content: "Celebrate your child's special day in style with our dedicated birthday setup and area. From themed decorations to exciting activities, we' ve got everything covered to make your little one's birthday unforgettable. Let us handle the details while you focus on creating magical memories.";
+  color: #000000;
+  background-color: #6fc6ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  /* Adjust the padding as needed */
+}
+
+
+
+.our-services-box4:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+
+/* box4-ar  */
+
+.our-services-box4-ar:hover {
+  background-color: #6fc6ee;
+  color: #ecf0f1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.our-services-box4-ar::after {
+  content: "احتفلوا بيوم مميز لطفلكم مع إعدادنا المخصص للاحتفال بعيد الميلاد. من الزينة الموافقة للموضوع إلى الأنشطة المثيرة، لدينا كل شيء مغطى لجعل عيد ميلاد صغيركم لا يُنسى. دعونا ندير التفاصيل بينما تركزون على صنع ذكريات ساحرة";
+  color: #000000;
+  background-color: #6fc6ee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+  text-align: center;
+  padding: 20%;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  /* Adjust the padding as needed */
+}
+
+
+
+.our-services-box4-ar:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom right;
+}
+
+/* ///////// */
+@media(max-width:1400px) {
+  .our-services-box1::after {
+    padding: 10%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .our-services-box2::after {
+    padding: 10%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .our-services-box3::after {
+    padding: 10%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+
+  .our-services-box4::after {
+    padding: 10%;
+    line-height: 1.5rem;
+    font-size: 1.2rem;
+  }
+}
+
+.about-us-button-phone {
+  display: none;
+}
+
+@media(max-width:991px) {
+  .our-services-pc-section {
+    display: none;
+  }
+
+  .our-services-phone-section {
+    display: block;
+  }
+
+  .about-us-button-pc {
+    display: none;
+  }
+
+  .about-us-button-phone {
+    display: block;
+  }
+}
+
+
+/* ////////////////////////////////////////// */
+/* Contact us section  */
+/* ////////////////////////////////////////// */
+
+.contact-us-main-div {
+  /* background: linear-gradient(120deg, #f7d683, 8%, #FF3FA4, 50%, #D67BFF, #6fc6ee); */
+  height: 80vh;
+  padding: 5% 0 5% 0;
+}
+
+@media(max-width:500px) {
+  .contact-us-main-div {
+    padding: 20% 0 5% 0;
+
+  }
+}
+
+.contact-us-location-div-settings {
+  padding: 2% 0 2% 10%;
+}
+
+.contact-us-location {
+  border-radius: 5px;
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  box-shadow: 0 0 40px 20px rgba(000, 000, 000, 0.2);
+
+}
+
+.contact-us-info-div {
+
+  border-radius: 5px;
+  z-index: 1;
+  padding: 1.5% 10% 1% 0;
+  background-color: #fff;
+  position: relative;
+  left: -13%;
+  box-shadow: 0 0 40px 20px rgba(255, 255, 255, 0.2);
+}
+
+@media(max-width:991px) {
+  .contact-us-info-div {
+    /* margin: 5%; */
+    left: 0;
+  }
+
+  .contact-us-location-div-settings {
+    padding: 2% 0 2% 0%;
+  }
+
+  .footer-main-div {
+    margin-top: 10% !important;
+  }
+
+  .contact-us-info-div {
+    margin-top: 5% !important;
+  }
+}
+
+@media(max-width:376px) {
+
+  .footer-main-div {
+    margin-top: 25% !important;
+  }
+
+}
+
+
+h2 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2px;
+}
+
+.contact-us-info-text {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 12% 0% 10% 48%;
+  background: -webkit-linear-gradient(left, #FF3FA4, #6fc6ee);
+  /* background: linear-gradient(150deg, #f7d683, 8%, #FF3FA4, 50%, #D67BFF, #6fc6ee); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-truck {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(-50%, -60px) rotate(270deg);
+}
+
+@media(max-width:850px) {
+  .contact-us-info-text {
+    font-size: 1.3rem;
+    padding: 1% 1% 1% 11%;
+  }
+}
+
+@media(max-width:500px) {
+  .contact-us-info-text {
+    font-size: 1.0rem;
+    padding: 7% 1% 1% 15%;
+  }
+}
+
+@media(max-width:344px) {
+  .contact-us-info-text {
+    font-size: 1.0rem;
+  }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/styles.css?v=<?= filemtime('css/styles.css'); ?>">
+  <link rel="preload" href="css/styles.css?v=<?= filemtime('css/styles.css'); ?>" as="style">
+
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Bubbles - A Fun-filled Soft Playground and Family Entertainment Center in Jordan. Explore our safe and exciting play area for kids aged 1 to 14, with a restaurant, coffee shop, and comfortable parent zones. Experience a hygienic environment and friendly staff. Plan your family outing today!">
+  <meta name="keywords"
+    content="Bubbles, soft playground, kids entertainment, family fun, play area, children's activities, restaurant, coffee shop, parent zone, hygienic environment, friendly staff, Jordan, family outing, indoor play area, interactive games, creative play, educational activities">
+  <meta name="robots" content="index, follow">
+
+  <!-- Title and Favicon -->
+  <title>Bubbles.jo</title>
+  <link rel="icon" href="css/images/fav-icon.png" type="image/png">
+
+  <!-- JSON-LD Script -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Bubbles Soft Playground",
+      "description": "Explore Bubbles - Jordan's Premier Soft Playground for Kids! Delight in our imaginative play zones tailored for children aged 1 to 14. Parents can relax in our comfortable spaces while kids play in a safe and stimulating environment. Indulge in tasty treats at our restaurant and coffee shop. Bubbles offers a perfect blend of fun and relaxation for families in Amman!",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Amman",
+        "addressCountry": "Jordan"
+      },
+      "telephone": "+962-XXXXXXXXX"
+    }
+  </script>
+
+  <!-- Dark Mode Script -->
+  <script>
+    // Check if dark mode is enabled
+    if (window.matchMedia) {
+      const darkModeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+      // Function to add or remove 'dark-mode' class based on the color scheme
+      const updateColorScheme = () => {
+        document.body.classList.toggle('dark-mode', darkModeQuery.matches);
+      };
+
+      // Apply initial color scheme
+      updateColorScheme();
+
+      // Update color scheme when it changes
+      darkModeQuery.addListener(updateColorScheme);
+    }
+  </script>
+</head>
+
+
+<body>
+
+  <!-- navbar  -->
+  <div class="navbar">
+    <ul>
+      <li class="navbar-hide"><a href="#aboutus">نبذة عنا</a></li>
+      <li class="navbar-hide"><a href="#ourservices">خدماتنا</a></li>
+      <li class="navbar-hide"><a href="#contactus">تواصل معنا</a></li>
+      <li><a href="index.html">EN</a></li>
+    </ul>
+  </div>
+
+
+  <section class="top-interface-section">
+    <div class="emote-container">
+      <div class="emote" style="color: #f7d683;">
+        <i class="fa-solid fa-hand-point-up finger-settings" style="color: #f7d683;"></i> touch the bubbles
+      </div>
+    </div>
+
+
+    <div class="wrapper">
+      <div class="intro-main-div">
+        <div class="logo-image-pc-div">
+          <img class="logo-image-pc" src="css/images/bubbles-logo.png" alt="Bubbles Logo">
+        </div>
+        <div class="logo-image-text-pc">
+          <p class="center-ar">مرحبًا بكم في <strong>مركز الترفيه بابلز</strong> - حيث كل يوم هو مغامرة وكل
+            لحظة هي صنع ذكرى! استمتعوا
+            بالمرح
+            العائلي حيث ينطلق الأطفال في مغامرات مثيرة في منطقة اللعب، يبنون صداقات ويصنعون ذكريات دائمة. استرخوا في
+            أماكننا الرائعة بينما يستكشف أطفالكم، واستمتعوا بالأطعمة اللذيذة من مقهانا. انضموا إلينا في مركز الترفيه
+            بابلز</p>
+
+
+          <a style="margin-top: 3%;" href="#aboutus"><button class="intro-main-button">
+              LEARN MORE
+            </button></a>
+        </div>
+      </div>
+      <img class="logo-image" src="css/images/bubbles-logo.png" alt="Bubbles Logo">
+      <div class="bubbles-div"><span class=""></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+      <div class="bubbles-div"><span class="dot"></span></div>
+
+
+
+    </div>
+
+
+
+
+  </section>
+
+
+  <!-- about us section -->
+  <section class="about-us-section" id="aboutus">
+    <div style="height: 4vh;">
+
+    </div>
+  </section>
+
+  <section>
+    <div class="row" style="margin-right:0">
+      <!-- <div class="col-lg-6">
+        <img src="css/images/bubbles-test2.PNG" alt="">
+      </div> -->
+      <div class="col-lg-10 about-us-text-div center-ar">
+        <h1 class="about-us-bubbles-text" style=""><strong>Bubbles</strong></h1>
+        <h2 class="about-us-ec-text" style=""><strong>Entertainment Center</strong></h2>
+
+        <div style="padding-bottom: 1%;">
+          <!-- <h2 style="display: inline-block; margin: 0;">Your Gateway to Family Fun!</h2> -->
+          <!-- <h3 style="display: inline-block; margin: 0;">- Your Gateway to Family Fun!</h3> -->
+        </div>
+
+        <p>ابدأوا رحلة ممتعة في بابلز! شاهدوا أطفالكم في مغامرات مثيرة، ويبنون صداقات، ويصنعون ذكريات. الأهالي، استرخوا
+          في
+          أماكننا الرائعة المطلة على مناطق اللعب بينما يستكشف أطفالكم. تناولوا الأطعمة اللذيذة في مقهانا. تمتعوا بسهولة
+          الوصول مع مواقف
+          السيارات
+          المجانية. تعالوا، كونوا جزءًا من الحماس في مركز ترفيه بابلز، حيث كل يوم هو مغامرة وكل لحظة هي ذكرى عزيزة
+          لأطفالكم</p>
+
+
+
+
+
+
+        <a class="about-us-button-pc" style="margin-top: 3%;" href="#ourservices"><button
+            class="about-us-button">Discover Our
+            Services</button></a>
+
+        <a class="about-us-button-phone" style="margin-top: 3%;" href="#ourservices-phone"><button
+            class="about-us-button">Discover Our Services</button></a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="about-us-section">
+    <div style="height: 10vh;">
+
+    </div>
+  </section>
+
+
+  <!-- our services section  -->
+  <section id="ourservices" class="our-services-pc-section">
+    <div style="" class="our-services-grandmother-div-padding">
+      <div class="our-services-mother-div">
+        <div class="row">
+          <div class="col-lg-6 our-services-box1-ar">
+            <img src="css/images/soft-play-area-pc.jpeg" alt="" class="our-services-images">
+          </div>
+          <div class="col-lg-6 our-services-box2-ar">
+            <img src="css/images/safe.jpeg" alt="" class="our-services-images">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 our-services-box3-ar">
+            <img src="css/images/food-coffe.jpg" alt="" class="our-services-images">
+          </div>
+          <div class="col-lg-6 our-services-box4-ar">
+            <img src="css/images/birth-day.jpeg" alt="" class="our-services-images">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- phone view  -->
+
+  <section id="ourservices-phone" class="our-services-phone-section">
+    </div>
+    <div id="our-servcies-anchor" class="our-services-main-div">
+
+
+      <div class="row" style="margin-right:0">
+        <div class="col-lg-6 our-services-div-settings">
+          <div class="row our-services-text-height">
+            <p id="our-services-text-id" class="col-lg-12 our-services-text" style="margin-right:0;margin-left: 0px;">
+              تعد منطقة اللعب النابضة بالحياة لدينا ملاذًا للأطفال الصغار، فهي مليئة بالهياكل الملونة والألعاب
+              التفاعلية، مما يوفر
+              مساحة آمنة ومبهجة للأطفال للاستكشاف واللعب وتكوين صداقات جديدة
+            </p>
+          </div>
+          <div style="    margin-left: 14px;" class="row our-services-buttons-div">
+
+            <div class="col-xl-3 col-6" style="padding-right: 0px;">
+              <button id="play-area-ar" style="    margin-bottom: 7px;"
+                class="our-services-buttons our-services-buttons-js-border our-services-phone-buttons-buttom-p">
+                <p class="our-services-phone-buttons-p">منطقة اللعب</p>
+              </button>
+            </div>
+            <div class="col-xl-3 col-6" style="padding-left: 0px;">
+              <button id="safty-and-staff-ar" style="    margin-bottom: 7px;"
+                class="our-services-buttons our-services-buttons-js-border our-services-phone-buttons-buttom-p">
+                <p class="our-services-phone-buttons-p">السلامة والنظافة</p>
+              </button>
+            </div>
+            <div class="col-xl-3 col-6" style="padding-right: 0px;">
+              <button id="food-and-coffee-ar"
+                class="our-services-buttons our-services-buttons-js-border our-services-phone-buttons-buttom-p">
+                <p class="our-services-phone-buttons-p">أكل وقهوة</p>
+              </button>
+            </div>
+            <div class="col-xl-3 col-6" style="padding-left: 0px;">
+              <button id="birthday-party-ar"
+                class="our-services-buttons our-services-buttons-js-border our-services-phone-buttons-buttom-p">
+                <p class="our-services-phone-buttons-p">أعياد الميلاد</p>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- contact us Section  -->
+
+  <section id="contactus">
+    <div class="section-spacer"></div>
+    <div id="contact-us-anchor" class="row contact-us-main-div" style="margin-right: 0;">
+      <div class="col-lg-6 contact-us-location-div-settings">
+        <!-- <iframe class="contact-us-location"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4895.822890309028!2d46.754850874927094!3d24.654641490489567!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f067c95a6f43f%3A0xc3e038026dde5714!2z2YXZg9iq2Kgg2LTYp9it2YbYp9iqINin2YTYrtmE2YrYrCDZhNmE2K7Yr9mF2KfYqiDYp9mE2KrYrNin2LHZitmH!5e0!3m2!1sen!2sjo!4v1695824299042!5m2!1sen!2sjo"
+          style="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+        <iframe class="contact-us-location"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3382.4677717488466!2d35.85939191225536!3d32.02952777387634!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzLCsDAxJzQ2LjMiTiAzNcKwNTEnNDMuMSJF!5e0!3m2!1sen!2sjo!4v1701015457737!5m2!1sen!2sjo"
+          width="" height="" style="" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+      <div class="col-lg-6 contact-us-info-div">
+        <div class="contact-us-info-text">
+
+          <h2>للتواصل</h2>
+          <div class="section-spacer" style="background-color: #85c65e; width: 50%; margin-bottom: 5%;"></div>
+          <p><i class="fa-solid fa-envelope"></i> Email: info@bubbles-jo.fun</p>
+          <i class="fa-solid fa-phone"></i> Phone: <a href="tel:+9627758211124">+962-7743322522</a><br>
+          <i class="fa-solid fa-phone"></i> Phone: <a href="tel:+9627758211124">+962-7758211124</a><br>
+          <p><i class="fa-solid fa-location-dot"></i>
+            Amman, Jordan </p>
+          <p> 11937 Al Jubaiha near safeway </p>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- footer section -->
+
+  <section>
+    <div class="footer-media-icons-div">
+      <a href="https://www.instagram.com/bubbles.jo/" class="footer-single-media"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/Bubbles.Entertainment.Center" class="footer-single-media"><i
+          class="fab fa-facebook-f"></i></a>
+    </div>
+
+    <div>
+      <p class="footer-rights">©2023 All Rights Reserved</p>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!-- jquery  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
